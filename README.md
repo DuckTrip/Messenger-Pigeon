@@ -15,4 +15,4 @@ Draw.io [Architecture Diagram](https://drive.google.com/file/d/1J_NwIKpCV4IBwD2g
 ## Prototype UI-Mockup
 
 ### Login Screen
-![Login Webpage](prototype/UI-Mockups/UI Prototype-Log In Page.drawio.svg)
+![Login Webpage](.prototype/UI-Mockups/UI Prototype-Log In Page.drawio.svg)

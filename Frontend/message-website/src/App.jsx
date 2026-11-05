@@ -1,19 +1,13 @@
-import OptionsSidebar from "./components/OptionsSidebar"
-import Contacts from "./components/Contacts"
-import ChatArea from "./components/ChatArea"
-import PigeonDecal from "./components/PigeonDecal"
-import IphoneMainScreen from "./components/IphoneMainScreen"
-
+import Contacts from "./components/message-page/Contacts"
+import ChatBox from "./components/message-page/ChatBox"
 // Using tailwind formating
 function App() {
   return (
     // Main full-screen wrapper 
-    <div className="relative flex flex-col h-dvh w-dvw overflow-hidden font-sans text-gray-200 antialiased">
-      {/* <PigeonDecal />
-      <OptionsSidebar />
+    <div className="relative flex h-dvh w-dvw overflow-hidden font-sans text-gray-200 antialiased">
+
       <Contacts />
-      <ChatArea /> */}
-      <IphoneMainScreen />
+      <ChatBox />
 
     </div>
   )

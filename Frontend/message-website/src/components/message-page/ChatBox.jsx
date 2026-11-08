@@ -7,7 +7,8 @@ export default function ChatBox() {
           Person 1 Chat Room
         </div>
       </div>
-      <div className="flex flex-col grow overflow-y-auto p-4 justify-end gap-4">
+      <div className="flex flex-col grow overflow-y-auto p-4 justify-end gap-4"> {/* Chat Stream Wrapper starting at the bottom */}
+        {/* Two chats with a small circle to the left of each chat text */}
         <div className="flex items-start gap-4">
           <div className="h-10 w-10 rounded-full bg-indigo-400 flex-shrink-0" />
           <div>
@@ -18,6 +19,7 @@ export default function ChatBox() {
             <p className="text-sm text-gray-300 text-left">Hi Janice</p>
           </div>
         </div>
+
         <div className="flex items-start gap-4">
           <div className="h-10 w-10 rounded-full bg-violet-500 flex-shrink-0" />
           <div>

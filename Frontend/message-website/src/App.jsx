@@ -4,7 +4,7 @@ import ChatBox from "./components/message-page/ChatBox"
 function App() {
   return (
     // Main full-screen wrapper 
-    <div className="relative flex h-dvh w-dvw overflow-hidden font-sans text-gray-200 antialiased">
+    <div className="flex h-dvh w-dvw overflow-hidden font-sans text-gray-200 antialiased">
 
       <Contacts />
       <ChatBox />

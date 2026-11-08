@@ -1,3 +1,4 @@
+import ChatInputBox from "./ChatInputBox"
 export default function ChatBox() {
 
   return (
@@ -31,6 +32,7 @@ export default function ChatBox() {
           </div>
         </div>
       </div>
+      <ChatInputBox />
     </div>
   )
 }

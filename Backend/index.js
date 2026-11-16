@@ -1,3 +1,4 @@
+// Using a tutorial to figure out how to connect to mongodb
 import { MongoClient } from 'mongodb';
 
 const client = new MongoClient("mongodb+srv://DuckTrip:<db_password>@messengerpigeonchat.cghhloa.mongodb.net/?compressors=zlib");

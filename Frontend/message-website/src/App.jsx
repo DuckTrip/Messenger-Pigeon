@@ -1,7 +1,7 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import socket from "./socket"
 import { useState, useEffect } from "react"
-import { Conversation } from "./pages/Conversation";
+import Conversation from "./pages/Conversation";
 
 // Using tailwind formating
 function App() {

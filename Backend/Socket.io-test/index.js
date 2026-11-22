@@ -8,7 +8,7 @@ const { Server } = require("socket.io");
 const mongoose = require('mongoose');
 
 const { default: Blog } = require('./model/Blog.js');
-const { default: Message } = require('.model/Message.js');
+const { default: Message } = require('./model/Message.js');
 
 const io = new Server(server, {
   cors: {
@@ -29,6 +29,17 @@ async function dbCreate() {
   });
   console.log('Created article', article);
 }
+
+async function createMessage() {
+  const savedMessage = await Message.create({
+    sender: 'Person 2',
+    text: 'Hi Janice',
+    attachment: null,
+  });
+  console.log('Message Saved', savedMessage);
+};
+
+createMessage();
 
 // What happens when the Frontend socket is loaded
 io.on('connection', (socket) => {

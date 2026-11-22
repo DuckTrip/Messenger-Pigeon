@@ -1,6 +1,6 @@
 export default function Contacts() {
   return (
-    <div className="flex w-60 flex-col shrink-0 bg-neutral-900"> {/* Big rectangle to hold contacts and header */}
+    <div className="flex w-1/4 lg:w-1/5 xl:w-1/6 flex-col shrink-0 bg-neutral-900"> {/* Big rectangle to hold contacts and header */}
       <div className="flex h-12 items-center border-b border-neutral-950 px-4"> {/* Header box */}
         <div className="grow font-bold text-white text-center"> {/* Text style */}
           Chats

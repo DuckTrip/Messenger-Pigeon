@@ -1,7 +1,7 @@
-import Contacts from "./components/message-page/Contacts"
-import ChatBox from "./components/message-page/ChatBox"
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import socket from "./socket"
 import { useState, useEffect } from "react"
+import { Conversation } from "./pages/Conversation";
 
 // Using tailwind formating
 function App() {
@@ -27,14 +27,11 @@ function App() {
 
 
   return (
-
-    // Main full-screen wrapper 
-    <div className="flex h-dvh w-dvw overflow-hidden font-sans text-gray-200 antialiased">
-
-      <Contacts />
-      <ChatBox />
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Conversation />} />
+      </Routes>
+    </Router >
   )
 }
 

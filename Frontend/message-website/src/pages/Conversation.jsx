@@ -1,7 +1,7 @@
 import ChatBox from "../components/ChatBox";
 import Contacts from "../components/Contacts";
 
-export function Converstation() {
+export default function Converstation() {
 
   return (
     // Main full-screen wrapper 

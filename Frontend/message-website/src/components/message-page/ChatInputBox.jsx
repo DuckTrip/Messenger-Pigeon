@@ -32,8 +32,8 @@ export default function ChatInputBox() {
     e.preventDefault();
 
     clientRef.current.publish({
-      destination: null, // where does this go to in the controller
-      body: JSON.stringify(text), // If we're sending as a JSON file
+      destination: "/app/chat.send", // where does this go to in the controller
+      body: text,
     });
     setText('');
   };
